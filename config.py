@@ -31,6 +31,7 @@ class Settings(BaseSettings):
     # App
     log_level: str = "INFO"
     graph_output_dir: str = "./graphs"
+    port: int = 10000  # Default port for Render
 
     model_config = SettingsConfigDict(
         env_file=".env",
